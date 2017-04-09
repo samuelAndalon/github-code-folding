@@ -1,15 +1,16 @@
 {
-  "name": "GitHub Code Folding",
+  "name": "GitHub, EWEGithub Code Folding",
   "version": "0.1.0",
-  "description": "Enable code folding when viewing files in GitHub.",
+  "description": "Enable code folding when viewing files in GitHub, EWEGithub.",
   "homepage_url": "https://github.com/noam3127/github-code-folding",
   "manifest_version": 2,
   "minimum_chrome_version": "49",
   "author": "Noam Lustiger",
-  "short_name": "Github Code Folding",
+  "short_name": "Github, EWEGithub Code Folding",
   "permissions": [
     "tabs",
-    "*://github.com/*"
+    "*://github.com/*",
+    "*://ewegithub.sb.karmalab.net/*"
   ],
   "background": {
     "scripts": ["background.js"],
@@ -21,7 +22,8 @@
   "content_scripts": [{
     "run_at" : "document_end",
     "matches": [
-      "*://github.com/*"
+      "*://github.com/*",
+      "*://ewegithub.sb.karmalab.net/*"
     ],
     "css": [
       "style.css"

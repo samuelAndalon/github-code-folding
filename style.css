@@ -6,7 +6,6 @@ td.blob-code.blob-code-inner {
   left: 2px;
   width: 22px;
   opacity: 0.5;
-  transition: 0.15s;
 }
 .collapser:hover {
   opacity: 1;
